@@ -1,13 +1,16 @@
 import React from 'react';
-import './App.css';
-import Button from './components/Button';
+// import './App.css';
+import Form from './components/form';
+import List from './components/list'
+import style from './App.module.scss'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Button/>
+    <div className={style.AppStyle}>
+      <Form />
+      <List />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
